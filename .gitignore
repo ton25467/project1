@@ -1,0 +1,13 @@
+# Ignore heavy raw camera photos to avoid Git/GitHub size limits
+images/*.CR2
+images/RawPhoto*.JPG
+images/RawPhoto*.jpg
+images/RawPhoto*.png
+images/IMG_*.CR2
+
+# System and temporary files
+.DS_Store
+Thumbs.db
+node_modules/
+.agents/
+.gemini/
