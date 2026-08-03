@@ -1,28 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
 /* ==========================================
-   1. CSS VARIABLES (:root)
+   1. ตัวแปร CSS (:root)
    ========================================== */
 :root {
-  /* Main Architectural Color Palette */
-  --primary-color: #0F2027;     /* Deep Architectural Navy/Slate */
-  --secondary-color: #C8956C;   /* Warm Copper / Bronze accent */
-  --accent-color: #203A43;      /* Metallic Teal/Slate */
+  /* โทนสีหลักสำหรับการออกแบบบ้าน */
+  --primary-color: #0F2027;     /* สีกรมท่าสถาปัตยกรรมเข้ม */
+  --secondary-color: #C8956C;   /* สีทองแดงอุ่น สำหรับแต่งขอบ */
+  --accent-color: #203A43;      /* สีสเลทประกายเมทัลลิก */
   --bg-light: #F4F6F8;
   --bg-glass: rgba(255, 255, 255, 0.85);
   --text-dark: #1A202C;
   --text-muted: #4A5568;
   --white: #FFFFFF;
   
-  /* Elevation & Shadows */
+  /* มิติและเงา */
   --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
   --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.12);
   
-  /* Transitions */
+  /* เอฟเฟกต์การเคลื่อนไหว (Transition) */
   --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   
-  /* Typography & Layout */
+  /* ตัวอักษรและระยะขอบ */
   --font-primary: 'Outfit', sans-serif;
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -30,7 +30,7 @@
 }
 
 /* ==========================================
-   2. GLOBAL RESET & BASE TYPOGRAPHY
+   2. รีเซ็ตค่าเริ่มต้นและฟอนต์พื้นฐาน
    ========================================== */
 *, *::before, *::after {
   margin: 0;
@@ -116,7 +116,7 @@ main {
 }
 
 /* ==========================================
-   3. BUTTONS & MICRO-INTERACTIONS
+   3. ปุ่มและลูกเล่นการตอบสนอง
    ========================================== */
 .btn {
   display: inline-flex;
@@ -156,7 +156,7 @@ main {
 }
 
 /* ==========================================
-   4. HEADER & NAVBAR (FLEXBOX & GLASSMORPHISM)
+   4. ส่วนหัวและเมนูนำทาง (Navbar - Flexbox & Glassmorphism)
    ========================================== */
 header {
   position: sticky;
@@ -212,7 +212,7 @@ header {
   transition: color var(--transition-normal);
 }
 
-/* Nav Link Hover Underline Micro-interaction */
+/* เส้นใต้ของลิงก์เมนูเมื่อเอาเมาส์ชี้ */
 .nav-links a::after {
   content: '';
   position: absolute;
@@ -234,7 +234,7 @@ header {
 }
 
 /* ==========================================
-   5. HERO SECTION (FLEXBOX, GRADIENT & ENTRANCE ANIMATION)
+   5. ส่วนต้อนรับ (Hero Section - Flexbox, Gradient & Entrance Animation)
    ========================================== */
 .hero {
   display: flex;
@@ -286,7 +286,7 @@ header {
 }
 
 /* ==========================================
-   6. FEATURES SECTION (CSS GRID & GLASSMORPHISM)
+   6. ส่วนจุดเด่น (Features Section - CSS Grid & Glassmorphism)
    ========================================== */
 .features {
   background-color: var(--bg-light);
@@ -356,7 +356,7 @@ header {
 }
 
 /* ==========================================
-   7. TESTIMONIALS SECTION (CSS GRID & FLEXBOX)
+   7. ส่วนความเห็นลูกค้า (Testimonials Section - CSS Grid & Flexbox)
    ========================================== */
 .testimonials {
   padding: 6rem 2rem;
@@ -425,7 +425,7 @@ header {
 }
 
 /* ==========================================
-   8. CTA SECTION (GRADIENT BACKGROUND)
+   8. ส่วนเชิญชวนติดต่อ (CTA Section - Gradient Background)
    ========================================== */
 .cta-section {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
@@ -452,7 +452,7 @@ header {
 }
 
 /* ==========================================
-   9. PAGE HEADER & PRODUCT GRID (MENU PAGE)
+   9. ส่วนหัวหน้าเพจและการ์ดบริการ (Page Header & Product Grid ในหน้าบริการ)
    ========================================== */
 .page-header {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
@@ -540,7 +540,7 @@ header {
 }
 
 /* ==========================================
-   10. PROMOTION BANNER (GRADIENT BACKGROUND)
+   10. แบนเนอร์โปรโมชั่น (Promotion Banner - Gradient Background)
    ========================================== */
 .promotion-banner {
   background: linear-gradient(135deg, var(--secondary-color) 0%, #A87B56 100%);
@@ -563,7 +563,7 @@ header {
 }
 
 /* ==========================================
-   11. CONTACT SECTION (CONTACT GRID & GLASSMORPHISM)
+   11. ส่วนฟอร์มติดต่อ (Contact Section - Contact Grid & Glassmorphism)
    ========================================== */
 .contact-container {
   display: grid;
@@ -646,7 +646,7 @@ header {
   box-shadow: 0 0 0 4px rgba(200, 149, 108, 0.15);
 }
 
-/* Map Section */
+/* ส่วนของแผนที่ */
 .map-section {
   width: 100%;
   height: 450px;
@@ -661,7 +661,7 @@ header {
 }
 
 /* ==========================================
-   12. FOOTER (FLEXBOX & SOCIAL LINKS)
+   12. ส่วนท้ายเว็บ (Footer - Flexbox & Social Links)
    ========================================== */
 footer {
   background-color: var(--primary-color);
@@ -720,10 +720,10 @@ footer {
 }
 
 /* ==========================================
-   13. SERVICE DETAIL OVERLAY (CSS :target)
+   13. กล่องรายละเอียดบริการแบบป๊อปอัป (Service Detail Overlay - CSS :target)
    ========================================== */
 
-/* Card hover interactions */
+/* ลูกเล่นการตอบสนองเมื่อชี้ที่การ์ดบริการ */
 .product-card:hover .product-image {
   transform: scale(1.06);
 }
@@ -732,7 +732,7 @@ footer {
   color: var(--secondary-color);
 }
 
-/* Detail button inside cards */
+/* ปุ่มรายละเอียดในการ์ดแต่ละใบ */
 .btn-detail {
   align-self: flex-start;
   padding: 0.6rem 1.4rem;
@@ -755,7 +755,7 @@ footer {
   box-shadow: var(--shadow-sm);
 }
 
-/* Overlay (hidden by default) */
+/* ส่วนพื้นหลังของป๊อปอัปรายละเอียด (ซ่อนไว้เป็นค่าเริ่มต้น) */
 .service-detail-overlay {
   position: fixed;
   top: 0;
@@ -775,7 +775,7 @@ footer {
   transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 
-/* Show overlay when :target is active */
+/* แสดงผลป๊อปอัปเมื่อถูกคลิกเลือก (:target) */
 .service-detail-overlay:target {
   opacity: 1;
   visibility: visible;
@@ -786,7 +786,7 @@ footer {
   opacity: 1;
 }
 
-/* Detail card */
+/* การ์ดรายละเอียดบริการ */
 .service-detail-card {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -801,7 +801,7 @@ footer {
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
 }
 
-/* Close button */
+/* ปุ่มปิดการ์ดป๊อปอัป */
 .detail-close {
   position: absolute;
   top: 1rem;
@@ -828,7 +828,7 @@ footer {
   color: var(--white);
 }
 
-/* Detail hero image */
+/* รูปภาพขนาดใหญ่ในป๊อปอัป */
 .detail-hero {
   width: 100%;
   overflow: hidden;
@@ -842,7 +842,7 @@ footer {
   display: block;
 }
 
-/* Detail body content */
+/* เนื้อหารายละเอียดบริการ */
 .detail-body {
   padding: 2.5rem;
 }
@@ -875,7 +875,7 @@ footer {
   color: var(--text-muted);
 }
 
-/* Feature list */
+/* รายการสิ่งที่จะได้รับ */
 .detail-features {
   list-style: none;
   padding: 0;
@@ -900,7 +900,7 @@ footer {
 }
 
 /* ==========================================
-   14. KEYFRAME ANIMATIONS
+   14. ภาพเคลื่อนไหวคีย์เฟรม (Keyframe Animations)
    ========================================== */
 @keyframes heroEntrance {
   from {
@@ -935,10 +935,10 @@ footer {
 }
 
 /* ==========================================
-   14. RESPONSIVE DESIGN (@media queries)
+   15. การรองรับขนาดหน้าจอ (Responsive Design - @media queries)
    ========================================== */
 
-/* Breakpoint 1200px+ / Desktop */
+/* ขนาดหน้าจอคอมพิวเตอร์ทั่วไป (Desktop - 1200px+) */
 @media (min-width: 1200px) {
   .product-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -951,7 +951,7 @@ footer {
   }
 }
 
-/* Breakpoint 768px - 992px / Tablet */
+/* ขนาดหน้าจอแท็บเล็ต (Tablet - 768px ถึง 992px) */
 @media (max-width: 992px) {
   .hero {
     flex-direction: column;
@@ -979,7 +979,7 @@ footer {
   }
 }
 
-/* Breakpoint 375px / Mobile (max-width: 576px) */
+/* ขนาดหน้าจอมือถือ (Mobile - ไม่เกิน 576px) */
 @media (max-width: 576px) {
   .navbar {
     flex-direction: column;
@@ -1020,7 +1020,7 @@ footer {
     font-size: 2rem;
   }
 
-  /* Service Detail Overlay - Mobile */
+  /* กล่องรายละเอียดป๊อปอัปสำหรับหน้าจอมือถือ */
   .service-detail-overlay {
     padding: 1rem;
     align-items: flex-start;
